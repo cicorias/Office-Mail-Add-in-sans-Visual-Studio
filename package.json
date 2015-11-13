@@ -1,14 +1,43 @@
 {
-  "name":"my-first-mail-app",
+  "name": "my-first-mail-app",
   "version": "0.1.0",
+  "description": "Simple Office Mail Add-in",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./bin/server.js",
+    "nomon": "SET DEBUG=mailapp:* & npm start",
+    "debug": "SET DEBUG=mailapp:* & node ./node_modules/nodemon/bin/nodemon.js ./bin/server.js",
     "postinstall": "bower install"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cicorias/Office-Mail-Add-in-sans-Visual-Studio.git"
+  },
+  "keywords": [
+    "office",
+    "mail",
+    "addin",
+    "nodejs",
+    "express"
+  ],
+  "author": "Shawn Cicoria",
+  "license": "MIT",
+  "bugs": "https://github.com/cicorias/Office-Mail-Add-in-sans-Visual-Studio/issues",
+  "homepage": "https://github.com/cicorias/Office-Mail-Add-in-sans-Visual-Studio#readme",
   "devDependencies": {
     "chalk": "^1.1.1",
     "gulp": "^3.9.0",
     "gulp-webserver": "^0.9.1",
     "minimist": "^1.2.0",
+    "nodemon": "^1.7.1",
     "xmllint": "git+https://github.com/kripken/xml.js.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0"
   }
 }

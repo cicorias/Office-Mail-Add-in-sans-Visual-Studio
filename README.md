@@ -6,3 +6,13 @@ along with the various foundational tools that provide scafolding.
 At this point you're at the initial commit after running Yeoman Office generator and installing
 all the necessary tools and npm modules.
 
+
+## Step 1
+
+
+
+## Step 2
+
+At this point (if you've pulled branch /step2) you should be at the point of a working HTTPS server along with
+installing the server certificate to be trusted for your platform and browser
+
